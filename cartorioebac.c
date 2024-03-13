@@ -137,6 +137,7 @@ int main()
         printf("\t1 - Regristrar nome:\n");
         printf("\t2 - Consultar base de dados:\n");
 	    printf("\t3 - Excluir nome:\n ");//fim do menu
+	    printf("\t4 - Sair do sistema\n");//sair do sistema
 	    printf("Opção: ");
 	
 	
@@ -157,6 +158,11 @@ int main()
 		case 3:
 			deletar();
 		    break;  
+		
+		case 4:  
+		    printf("Obrigado por ultilizar o sistema!\n");
+		    return 0;
+		    break;
 		    
 		default://caso a resposta do usuário não seja 1,2 ou 3, apresenta resposta e volta o menu
 			printf("Essa opção não está disponível!\n");//fim da seleção
